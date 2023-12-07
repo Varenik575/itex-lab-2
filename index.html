@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ЛБ2_Букрєєва О.С.</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      #internal-style {
+        background-color: #335145;
+        border-radius: 10px;
+        margin-top: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+
+      #outer-div-s2 {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #beef9e;
+        width: 95%;
+        border-radius: 10px;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        font-family: Fredoka;
+        font-weight: 500;
+      }
+
+      #img-s2 {
+        max-width: 400px;
+        width: 70%;
+        height: fit-content;
+        border-radius: 10px;
+        margin-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+
+      #inner-div-s2 {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+      }
+
+      #article-s2 {
+        margin-left: 10px;
+        margin-right: 10px;
+        min-width: 10%;
+      }
+
+      #ul-s2 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2%;
+        list-style: none;
+        min-width: 10%;
+      }
+
+      #li-s2 {
+        width: 50px;
+        height: 50px;
+        background-color: #a6c36f;
+      }
+
+      #li-s2:hover {
+        background-color: black;
+      }
+
+      #ul-s2::before {
+        margin-bottom: 10px;
+        width: 350px;
+        height: 2px;
+        background-color: #335145;
+        content: "";
+      }
+
+      #h2-s2 {
+        text-align: center;
+        color: white;
+        font-size: 20px;
+      }
+
+      #outer-p-s2 {
+        text-align: center;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      style="
+        text-align: center;
+        background-color: #1e352f;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 10px;
+      "
+    >
+      <h1 style="font-size: 24px">Лабораторна робота №2, варіант №4</h1>
+      <p style="font-size: 20px">на тему "Каскадні таблиці стилів"</p>
+      <p style="font-size: 20px">Виконав ст. гр. КІУКІ-21-3 Букреева О.С.</p>
+    </header>
+
+    <main>
+      <div class="absolute-el-4">
+        <img
+          class="el-gif"
+          src="https://media1.tenor.com/m/0yJbcfwQyu8AAAAC/cry-crying.gif"
+          alt=" crying-cat-gif"
+        />
+      </div>
+
+      <section
+        id="inline-style"
+        style="
+          background-color: #335145;
+          border-radius: 10px;
+          margin-top: 10px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+        "
+      >
+        <h2 style="text-align: center; color: white; font-size: 20px">
+          Частина 1: inline-опис стилю (використовується атрибут style елемента)
+        </h2>
+        <p style="text-align: center; color: white">
+          Розумію, Ви надивились на інлайн-стилі під час першої лабораторної.
+          <br />
+          А ще хедер помальований інлайн-стилями
+          <span
+            style="color: black; background-color: #beef9e; border-radius: 10px"
+            >&#40;&#128065; &#128069; &#128065;&#41;</span
+          >
+          <br />
+          Але чи знаєте Ви, що використовуючи інлайн-стилі, не можна зробити
+          стилі псевдо-елементам? <br />
+          Напевно, знаєте - а я не знала!
+        </p>
+
+        <p style="color: white; text-align: center">
+          А тепер до справи - однаковий шматочок html-коду (у світло-зеленому),
+          <br />
+          оформлюю різними способами.
+        </p>
+
+        <div
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #beef9e;
+            width: 95%;
+            border-radius: 10px;
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+            font-family: Fredoka;
+            font-weight: 500;
+          "
+        >
+          <img
+            style="
+              max-width: 400px;
+              width: 70%;
+              height: fit-content;
+              border-radius: 10px;
+              margin-left: 5px;
+              margin-top: 5px;
+              margin-bottom: 5px;
+            "
+            src="img/cat.jpg"
+            alt="smiling cat"
+          />
+
+          <div style="display: flex; flex-direction: column; max-width: 400px">
+            <article
+              style="margin-left: 10px; margin-right: 10px; min-width: 10%"
+            >
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio
+                vel laudantium tenetur nisi magnam ipsa alias maiores maxime
+                dignissimos minima ex, incidunt impedit iste soluta aperiam
+                atque, laboriosam quae similique?
+              </p>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+                soluta recusandae assumenda facere voluptates quia odio earum
+                odit minima a aut, impedit molestias quod, fuga dignissimos.
+                Laborum, minus. Corporis, commodi. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Nisi ratione cumque enim mollitia
+                soluta! Repellat, temporibus dicta reprehenderit distinctio
+                laborum eius, necessitatibus est ipsum quaerat possimus
+                reiciendis nostrum facere praesentium?
+              </p>
+            </article>
+
+            <ul
+              style="
+                display: flex;
+                flex-wrap: wrap;
+                gap: 2%;
+                list-style: none;
+                min-width: 10%;
+              "
+            >
+              <li
+                style="width: 50px; height: 50px; background-color: #a6c36f"
+              ></li>
+              <li
+                style="width: 50px; height: 50px; background-color: #a6c36f"
+              ></li>
+              <li
+                style="width: 50px; height: 50px; background-color: #a6c36f"
+              ></li>
+              <li
+                style="width: 50px; height: 50px; background-color: #a6c36f"
+              ></li>
+              <li
+                style="width: 50px; height: 50px; background-color: #a6c36f"
+              ></li>
+              <li
+                style="width: 50px; height: 50px; background-color: #a6c36f"
+              ></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="internal-style">
+        <h2 id="h2-s2">
+          Частина 2: Internal-опис стилю (використовується тег &#60;style&#62; в
+          head)
+        </h2>
+
+        <p id="outer-p-s2">
+          Internal-опис - це вже крутіше, ніж інлайн-стилі. В тегу
+          &#60;style&#62; за атрибутом можна додавати псевдокласи (hover, focus
+          та інші). <br />
+          А ще вся стилізація зверху, а не посеред коду розмітки.
+        </p>
+
+        <p id="outer-p-s2">
+          Як селектор для елементів розмітки я використовую id - не найкращий
+          вибір, але класи я бережу для окремої таблиці стилів.
+        </p>
+
+        <div id="outer-div-s2">
+          <img id="img-s2" src="img/cat.jpg" alt="smiling cat" />
+
+          <div id="inner-div-s2">
+            <article id="article-s2">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio
+                vel laudantium tenetur nisi magnam ipsa alias maiores maxime
+                dignissimos minima ex, incidunt impedit iste soluta aperiam
+                atque, laboriosam quae similique?
+              </p>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+                soluta recusandae assumenda facere voluptates quia odio earum
+                odit minima a aut, impedit molestias quod, fuga dignissimos.
+                Laborum, minus. Corporis, commodi. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Nisi ratione cumque enim mollitia
+                soluta! Repellat, temporibus dicta reprehenderit distinctio
+                laborum eius, necessitatibus est ipsum quaerat possimus
+                reiciendis nostrum facere praesentium?
+              </p>
+            </article>
+
+            <ul id="ul-s2">
+              <li id="li-s2"></li>
+              <li id="li-s2"></li>
+              <li id="li-s2"></li>
+              <li id="li-s2"></li>
+              <li id="li-s2"></li>
+              <li id="li-s2"></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="external-style" class="s3">
+        <h2>
+          Частина 3: External-опис стилю (підключається окрема таблиця .css)
+        </h2>
+        <div class="outer-div-s3">
+          <img class="img-s3" src="img/cat.jpg" alt="smiling cat" />
+
+          <div class="inner-div-s3">
+            <article class="article-s3">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio
+                vel laudantium tenetur nisi magnam ipsa alias maiores maxime
+                dignissimos minima ex, incidunt impedit iste soluta aperiam
+                atque, laboriosam quae similique?
+              </p>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+                soluta recusandae assumenda facere voluptates quia odio earum
+                odit minima a aut, impedit molestias quod, fuga dignissimos.
+                Laborum, minus. Corporis, commodi. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Nisi ratione cumque enim mollitia
+                soluta! Repellat, temporibus dicta reprehenderit distinctio
+                laborum eius, necessitatibus est ipsum quaerat possimus
+                reiciendis nostrum facere praesentium?
+              </p>
+            </article>
+
+            <ul class="ul-s3">
+              <li class="li-s3"></li>
+              <li class="li-s3"></li>
+              <li class="li-s3"></li>
+              <li class="li-s3"></li>
+              <li class="li-s3"></li>
+              <li class="li-s3"></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
